@@ -1,0 +1,19 @@
+{
+    "name": "Nome do Meu Projeto",
+    // Selecione uma imagem base (ex: Node, Python, Ubuntu)
+    "image": "://mcr.microsoft.com",
+    // Instalar extensões do VS Code automaticamente
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "dbaeumer.vscode-eslint"
+            ]
+        }
+    },
+    // Executar comandos após a criação
+    "postCreateCommand": "npm install",
+    // Encaminhar portas do contêiner para sua máquina
+    "forwardPorts": [
+        3000
+    ]
+}
